@@ -15,7 +15,7 @@ public class IncrementDecrement {
         int gift = 100 + lives++; // postfijo se accede al dato anterior de la variable y despues la incrementa
         System.out.println(gift);
 
-        int gift2 = 100 + ++lives; // prefijo 
+        int gift2 = 100 + ++lives; // prefijo
         System.out.println(gift2);
 
 
