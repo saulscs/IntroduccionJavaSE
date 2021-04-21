@@ -7,6 +7,9 @@ public class IfStament {
             //Send file
             fileSended++;
             System.out.println("Archivo enviado");
+        } else {
+            fileSended--;
+            System.out.println("Enciende el bluetooth para iniciar la transferencia");
         }
     }
 }
