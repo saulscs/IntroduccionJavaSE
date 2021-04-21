@@ -1,11 +1,3 @@
-// Los empleados tienen todos el mismo sueldo base (BA), cada empleado pertenece a una
-//categoria (CA) 1,2,5,10,20,30 tambien dentro de cada categoria el empleado trabja en una
-//zona de riesgo (ZR) A,B,C. El sueldo bruto de cada empleado se calcula sumando el BA más
-// un 5%, 10% , 15%, 25%, 40% del BA por cada categoria correspondiente la cuenta anterior
-//se multiplica por un factor de 1,2 o 3 según la zona de riesgo de trabajo, además los empleados reciben
-// un aumento del 3% del BA por cada hijo (NH). Todos tienen un descuento del 1.5% del BR en concepto de
-//aportes, a esto le tenemos que quitar el 30% de impuesto para obtener el sueldo neto.
-
 import java.util.Scanner;
 
 public class SueldoNeto {
@@ -61,6 +53,7 @@ public class SueldoNeto {
             default: System.out.println("La zona de riesgo no es valida");
         }
 
+
         if(hijos > 0 ){
             aumento = (sueldoBase * 0.03) * hijos;
         } else {
@@ -69,7 +62,9 @@ public class SueldoNeto {
 
         aporte = sueldoBruto * 0.015;
 
+
         sueldoBruto = sueldoBruto + aumento - aporte;
+
 
         calculoImpuesto = sueldoBruto * impuesto;
 
