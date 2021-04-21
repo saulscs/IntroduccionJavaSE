@@ -8,6 +8,8 @@ public class FuncionesJava {
 
         //Area de una esfera
         //4*PI*r2
+
+
         double spheraA = spheraArea(y);
         System.out.println(spheraA);
 
@@ -29,6 +31,13 @@ public class FuncionesJava {
     public static double spheraVolumen(double r){
         return (4/3)  * Math.PI * Math.pow(r,3);
     }
+
+    /**
+     * Descripción: Funcion que convierte de pesos a dolares.
+     * @param quanty Cantidad de dinero
+     * @param currency  Tipo de moneda: solo acepta MXN o COP
+     * @return quanty devuelve la contidad en dolares.
+     * */
 
     public static double convertirDolar(double quanty, String currency){
         //MXN to COP
