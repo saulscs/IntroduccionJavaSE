@@ -17,6 +17,7 @@ public class SueldoNeto {
 
         Scanner entrada = new Scanner(System.in);
 
+
         System.out.println("Introduce tu sueldo básico: ");
         sueldoBase  = entrada.nextDouble();
 
